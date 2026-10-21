@@ -7,6 +7,7 @@
     <meta name="description" content="Кофе в зёрнах, аксессуары и понятные рецепты. Выберите свой вкус в учебном магазине 2much.">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
@@ -101,6 +102,8 @@
             <p class="product-card__description">Шоколад · фундук · карамель</p>
             <div class="product-card__bottom">
               <span class="product-card__price">790 ₽</span>
+              <button class="product-card__button" type="button" data-product="brazil">Заказать <span aria-hidden="true">+</span>
+              </button>
             </div>
             <a class="product-card__details" href="#popular">Подробнее о кофе →</a>
           </article>
@@ -120,6 +123,8 @@
             <p class="product-card__description">Бергамот · абрикос · чёрный чай</p>
             <div class="product-card__bottom">
               <span class="product-card__price">990 ₽</span>
+              <button class="product-card__button" type="button" data-product="ethiopia">Заказать <span aria-hidden="true">+</span>
+              </button>
             </div>
             <a class="product-card__details" href="#popular">Подробнее о кофе →</a>
           </article>
@@ -138,6 +143,8 @@
             <p class="product-card__description">Красное яблоко · какао · изюм</p>
             <div class="product-card__bottom">
               <span class="product-card__price">890 ₽</span>
+              <button class="product-card__button" type="button" data-product="colombia">Заказать <span aria-hidden="true">+</span>
+              </button>
             </div>
             <a class="product-card__details" href="#popular">Подробнее о кофе →</a>
           </article>
@@ -154,6 +161,77 @@
       </section>
       <aside class="help-strip container">
         <p>Пока не знаете, что выбрать?</p>
+        <button class="text-link" type="button" data-product="consultation">Начните с консультации ↗</button>
+      </aside>
+      <dialog class="order-dialog" id="order-dialog" aria-labelledby="dialog-title">
+        <button class="order-dialog__close" type="button" data-close-dialog aria-label="Закрыть форму">×</button>
+        <p class="eyebrow">ВАША СЛЕДУЮЩАЯ ЧАШКА</p>
+        <h2 id="dialog-title">Оставить заявку</h2>
+        <form class="order-form" id="quick-form" action="#" method="post" novalidate>
+          <input type="hidden" id="quick-selected-product" name="selected-product">
+          <p class="order-form__intro">Поля со звёздочкой обязательны. Это демонстрация: данные не сохраняются и не отправляются.</p>
+          <div class="order-form__grid">
+            <div class="order-form__field">
+              <label for="quick-name">Имя *</label>
+              <input id="quick-name" name="name" type="text" minlength="2" maxlength="80" autocomplete="given-name" placeholder="Как к вам обращаться" required aria-describedby="quick-name-hint quick-name-error">
+              <small id="quick-name-hint">Не менее двух символов.</small>
+              <span class="order-form__error" id="quick-name-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-email">Электронная почта *</label>
+              <input id="quick-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="quick-email-error">
+              <span class="order-form__error" id="quick-email-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-phone">Телефон *</label>
+              <input id="quick-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required aria-describedby="quick-phone-hint quick-phone-error">
+              <small id="quick-phone-hint">Формат: +7 (900) 000-00-00.</small>
+              <span class="order-form__error" id="quick-phone-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-date">Удобная дата связи</label>
+              <input id="quick-date" name="date" type="date" aria-describedby="quick-date-error">
+              <span class="order-form__error" id="quick-date-error"></span>
+            </div>
+            <div class="order-form__field order-form__field--wide">
+              <label for="quick-product">Товар или тема заявки *</label>
+              <select id="quick-product" name="product" required aria-describedby="quick-product-error">
+                <option value="">Выберите товар или консультацию</option>
+                <option value="brazil">Бразилия Серрадо - 790 ₽</option>
+                <option value="ethiopia">Эфиопия Сидамо - 990 ₽</option>
+                <option value="colombia">Колумбия Уила - 890 ₽</option>
+                <option value="decaf">Вечерний ритуал - 1090 ₽</option>
+                <option value="dripper">Воронка 02 - 1590 ₽</option>
+                <option value="consultation">Помочь с выбором</option>
+              </select>
+              <span class="order-form__error" id="quick-product-error"></span>
+            </div>
+            <div class="order-form__field order-form__field--wide">
+              <label for="quick-comment">Комментарий</label>
+              <textarea id="quick-comment" name="comment" rows="4" maxlength="1000" placeholder="Например: нужен помол для гейзерной кофеварки"></textarea>
+            </div>
+          </div>
+          <div class="order-form__field order-form__field--checkbox">
+            <input id="quick-agreement" name="agreement" type="checkbox" required aria-describedby="quick-agreement-error">
+            <label for="quick-agreement">Я согласен с <a href="#form-data">условиями обработки данных</a> *</label>
+            <span class="order-form__error" id="quick-agreement-error"></span>
+          </div>
+          <p class="order-form__summary" role="alert" hidden></p>
+          <div class="order-form__actions">
+            <button class="button" type="submit">Отправить заявку <span aria-hidden="true">↗</span>
+            </button>
+            <button class="button button--plain" type="button" data-close-dialog>Отмена</button>
+          </div>
+        </form>
+      </dialog>
+      <section class="success-message container" role="status" id="success-message" tabindex="-1" hidden>
+        <h2>Форма успешно отправлена!</h2>
+        <p>Демонстрация завершена: поля проверены и очищены. Данные остались в браузере и не передавались на сервер.</p>
+        <a href="#popular">Вернуться к выбору кофе →</a>
+      </section>
+      <aside id="form-data">
+        <h2>О данных формы</h2>
+        <p>Учебная форма проверяет поля в браузере. Данные не отправляются и не сохраняются.</p>
       </aside>
     </main>
     <footer class="site-footer" id="contacts">
@@ -177,7 +255,7 @@
         <div class="site-footer__bottom">
           <span>© 2026 2much</span>
           <span>Учебный магазин. Покупки и отправка данных недоступны.</span>
-          <a href="#contacts">Обработка данных</a>
+          <a href="#form-data">Обработка данных</a>
         </div>
       </div>
     </footer>
