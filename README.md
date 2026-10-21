@@ -25,7 +25,7 @@ python -m http.server 8000
 
 ## Опубликованная версия
 
-GitHub Pages: ссылка будет добавлена после публикации владельцем репозитория.
+GitHub Pages: https://abulkameiner.github.io/kr1-html-css-shop/
 
 ## Структура проекта
 
