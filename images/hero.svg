@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 800"><rect width="100%" height="100%" fill="#afb196"/><path d="M0 510H780V800H0Z" fill="#c3b9a3"/><path d="M0 520L400 422 780 492V800H0Z" fill="#d4c6ab"/><path d="M42 620L490 570 620 646 147 716Z" fill="#b8aa8d" opacity=".45"/>
+<text x="34" y="57" font-family="Arial,sans-serif" font-size="12" fill="#4a4a38" letter-spacing="2">2much / КОЛЛЕКЦИЯ ЗЕРНА</text>
+<path d="M30 70H740" stroke="#8b8d70"/>
+<g transform="translate(360 130) scale(1.08)">
+    <path d="M18 10H214L228 36 242 432 0 432 8 36Z" fill="#dbcfb4"/>
+    <path d="M18 10H214L202 42H28Z" fill="#bdb193"/><path d="M8 36L28 42 21 408 0 432Z" fill="#c1b498"/>
+    <path d="M214 10L228 36 242 432 220 408 202 42Z" fill="#cbbb9c"/>
+    <path d="M21 408H220L242 432H0Z" fill="#b6a98c"/>
+    <path d="M32 52H196" stroke="#a99b7e" stroke-width="3"/>
+    <rect x="26" y="90" width="188" height="260" fill="#7d8460"/>
+    <text x="40" y="130" fill="#fff9eb" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="-1">2much</text>
+    <path d="M40 150H200" stroke="#fff9eb" opacity=".6"/>
+    <text x="40" y="212" fill="#fff9eb" font-family="Georgia,serif" font-size="68">02</text>
+    <text x="40" y="258" fill="#fff9eb" font-family="Arial,sans-serif" font-size="18" letter-spacing="1">ETHIOPIA</text>
+    <text x="40" y="281" fill="#fff9eb" font-family="Arial,sans-serif" font-size="10">КОФЕ В ЗЁРНАХ / 250 Г</text>
+    <path d="M40 305H200" stroke="#fff9eb" opacity=".6"/>
+    <text x="40" y="329" fill="#fff9eb" font-family="Arial,sans-serif" font-size="11">ЗАРЯД НАСТРОЕНИЯ</text>
+    <circle cx="122" cy="68" r="7" fill="#a99b7e"/><circle cx="122" cy="68" r="3" fill="#746a55"/>
+    </g><g transform="translate(95 195) scale(1.18)">
+    <path d="M18 10H214L228 36 242 432 0 432 8 36Z" fill="#dbcfb4"/>
+    <path d="M18 10H214L202 42H28Z" fill="#bdb193"/><path d="M8 36L28 42 21 408 0 432Z" fill="#c1b498"/>
+    <path d="M214 10L228 36 242 432 220 408 202 42Z" fill="#cbbb9c"/>
+    <path d="M21 408H220L242 432H0Z" fill="#b6a98c"/>
+    <path d="M32 52H196" stroke="#a99b7e" stroke-width="3"/>
+    <rect x="26" y="90" width="188" height="260" fill="#b54b2e"/>
+    <text x="40" y="130" fill="#fff9eb" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="-1">2much</text>
+    <path d="M40 150H200" stroke="#fff9eb" opacity=".6"/>
+    <text x="40" y="212" fill="#fff9eb" font-family="Georgia,serif" font-size="68">01</text>
+    <text x="40" y="258" fill="#fff9eb" font-family="Arial,sans-serif" font-size="18" letter-spacing="1">BRASIL</text>
+    <text x="40" y="281" fill="#fff9eb" font-family="Arial,sans-serif" font-size="10">КОФЕ В ЗЁРНАХ / 250 Г</text>
+    <path d="M40 305H200" stroke="#fff9eb" opacity=".6"/>
+    <text x="40" y="329" fill="#fff9eb" font-family="Arial,sans-serif" font-size="11">ЗАРЯД НАСТРОЕНИЯ</text>
+    <circle cx="122" cy="68" r="7" fill="#a99b7e"/><circle cx="122" cy="68" r="3" fill="#746a55"/>
+    </g><g transform="translate(445 465)"><ellipse cx="88" cy="174" rx="119" ry="26" fill="#b3a58b"/><path d="M165 53C246 26 243 148 163 140" fill="none" stroke="#eae0c9" stroke-width="23"/><path d="M0 45L12 149Q87 194 168 149L178 45Z" fill="#ede4d0"/><ellipse cx="89" cy="45" rx="89" ry="24" fill="#f8efdd"/><ellipse cx="89" cy="45" rx="73" ry="16" fill="#553726"/><path d="M70 24C26 -8 110 -22 72 -62M107 20C70 -10 146 -32 104 -74" fill="none" stroke="#f6f0e3" stroke-width="3" opacity=".7"/></g>
+<text x="36" y="752" font-family="Arial,sans-serif" font-size="12" fill="#4a4a38" letter-spacing="1">01 / ЭСПРЕССО</text><text x="525" y="752" font-family="Arial,sans-serif" font-size="12" fill="#4a4a38" letter-spacing="1">02 / ФИЛЬТР</text></svg>
