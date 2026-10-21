@@ -34,3 +34,5 @@ h1, h2 {
 a {
   color: #ab4026;
 }
+
+section p { max-width: 720px; }
