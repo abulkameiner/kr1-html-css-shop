@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600"><rect width="100%" height="100%" fill="#ede9df"/><ellipse cx="300" cy="508" rx="145" ry="12" fill="#d7d1c5"/><g transform="translate(180 65) scale(1)">
+    <path d="M18 10H214L228 36 242 432 0 432 8 36Z" fill="#dbcfb4"/>
+    <path d="M18 10H214L202 42H28Z" fill="#bdb193"/><path d="M8 36L28 42 21 408 0 432Z" fill="#c1b498"/>
+    <path d="M214 10L228 36 242 432 220 408 202 42Z" fill="#cbbb9c"/>
+    <path d="M21 408H220L242 432H0Z" fill="#b6a98c"/>
+    <path d="M32 52H196" stroke="#a99b7e" stroke-width="3"/>
+    <rect x="26" y="90" width="188" height="260" fill="#b54b2e"/>
+    <text x="40" y="130" fill="#fff9eb" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="-1">2much</text>
+    <path d="M40 150H200" stroke="#fff9eb" opacity=".6"/>
+    <text x="40" y="212" fill="#fff9eb" font-family="Georgia,serif" font-size="68">01</text>
+    <text x="40" y="258" fill="#fff9eb" font-family="Arial,sans-serif" font-size="18" letter-spacing="1">BRASIL</text>
+    <text x="40" y="281" fill="#fff9eb" font-family="Arial,sans-serif" font-size="10">КОФЕ В ЗЁРНАХ / 250 Г</text>
+    <path d="M40 305H200" stroke="#fff9eb" opacity=".6"/>
+    <text x="40" y="329" fill="#fff9eb" font-family="Arial,sans-serif" font-size="11">ЗАРЯД НАСТРОЕНИЯ</text>
+    <circle cx="122" cy="68" r="7" fill="#a99b7e"/><circle cx="122" cy="68" r="3" fill="#746a55"/>
+    </g></svg>

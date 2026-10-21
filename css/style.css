@@ -35,4 +35,101 @@ a {
   color: #ab4026;
 }
 
-section p { max-width: 720px; }
+/* Базовое оформление без Flex/Grid: раскладка изучается на следующем этапе. */
+.container {
+  max-width: 1100px;
+  margin: 0 auto 28px;
+}
+
+.site-header__logo {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.site-header__descriptor {
+  display: block;
+  font-size: 11px;
+}
+
+.site-nav__list {
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav__list li {
+  margin-bottom: 8px;
+}
+
+.announcement {
+  padding: 10px 20px;
+}
+
+.hero {
+  padding: 28px;
+  background: #eae6da;
+}
+
+.hero h1 {
+  font-size: 40px;
+}
+
+.hero__visual {
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.hero__visual img {
+  max-width: 480px;
+}
+
+.product-card {
+  padding: 16px;
+  border: 1px solid #d2d0c4;
+  margin-bottom: 20px;
+}
+
+.product-card img {
+  width: 250px;
+}
+
+.product-card__meta {
+  font-size: 12px;
+}
+
+.product-card__title {
+  margin-top: 16px;
+}
+
+.product-card__badge {
+  background: #eae6da;
+  padding: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #ab4026;
+  color: white;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #81301e;
+}
+
+.brew-banner img {
+  width: 380px;
+}
+
+.site-footer nav a {
+  display: block;
+  margin: 8px 0;
+}
+
+.skip-link, .back-top {
+  display: none;
+}

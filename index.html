@@ -2,22 +2,185 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>2much - старт проекта</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заряд настроения на весь день - 2much</title>
+    <meta name="description" content="Кофе в зёрнах, аксессуары и понятные рецепты. Выберите свой вкус в учебном магазине 2much.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>2much</header>
-    <main>
-      <section>
-        <h1>2much - кофе и аксессуары</h1>
-        <p>Учебный frontend-проект интернет-магазина.</p>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">Заряд настроения на весь день</div>
+    <header class="site-header" id="top">
+      <div class="site-header__inner container">
+        <a class="site-header__logo" href="index.html" aria-label="2much - на главную">2much<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="index.html" aria-current="page">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#popular">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#advantages">Как заваривать</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__order" href="#popular">Оставить заявку <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero container">
+        <div class="hero__copy">
+          <p class="eyebrow">НЕБОЛЬШАЯ ПЕРЕМЕНА. КАЖДЫЙ ДЕНЬ.</p>
+          <h1>Заряд настроения<br>на <em>весь день.</em>
+          </h1>
+          <p class="hero__description">Зерно с понятным характером и вещи для любимого ритуала. От первого глотка - до последнего дела.</p>
+          <a class="button" href="#popular">Найти свой кофе <span aria-hidden="true">↗</span>
+          </a>
+          <a class="hero__secondary" href="#advantages">А как его заварить?</a>
+          <div class="hero__note">
+            <span class="hero__asterisk" aria-hidden="true">✳</span>
+            <p>Эспрессо или фильтр?<br>Для каждого утра найдётся свой кофе.</p>
+          </div>
+        </div>
+        <figure class="hero__visual">
+          <img src="images/hero.svg" width="780" height="800" alt="Два пакета кофе 2much и чашка: коллекции для эспрессо и фильтра">
+          <figcaption>ЗЕРНО. ВОДА. НЕМНОГО ВРЕМЕНИ ДЛЯ СЕБЯ.</figcaption>
+        </figure>
       </section>
-      <section>
-        <h2>О проекте</h2>
-        <p>Здесь будет создан многостраничный каталог кофе и аксессуаров с формой заявки.</p>
+      <section class="approach container" id="advantages" aria-labelledby="approach-title">
+        <h2 class="eyebrow" id="approach-title">ПРОСТО О ВАЖНОМ</h2>
+        <div class="approach__grid">
+          <article>
+            <span class="approach__number">01</span>
+            <h3>Вкус, который понятен</h3>
+            <p>Шоколад, ягоды или цитрусы - начните с того, что любите. Ноты в карточке помогут сориентироваться.</p>
+          </article>
+          <article>
+            <span class="approach__number">02</span>
+            <h3>Под ваш способ</h3>
+            <p>Отдельные подборки для эспрессо и фильтра. Не нужно разбираться во всём, чтобы выбрать свою пачку.</p>
+          </article>
+          <article>
+            <span class="approach__number">03</span>
+            <h3>Ритуал без сложности</h3>
+            <p>Базовые аксессуары и короткие рецепты. Хорошую чашку можно приготовить дома.</p>
+          </article>
+        </div>
       </section>
+      <section class="section container" id="popular">
+        <div class="section__heading">
+          <div>
+            <p class="eyebrow">С ЧЕГО НАЧАТЬ</p>
+            <h2>Своя чашка найдётся.</h2>
+          </div>
+          <a class="text-link" href="#popular">Весь каталог <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="product-grid">
+          <article class="product-card product-card--espresso">
+            <a class="product-card__image-link" href="#popular" aria-label="Подробнее: Бразилия Серрадо">
+              <img class="product-card__image" src="images/brazil.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Бразилия Серрадо">
+              <span class="product-card__badge">Начните с него</span>
+              <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="product-card__meta">
+              <span>Для эспрессо</span>
+              <span>250 г</span>
+            </div>
+            <h3 class="product-card__title">
+              <a href="#popular">Бразилия Серрадо</a>
+            </h3>
+            <p class="product-card__description">Шоколад · фундук · карамель</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">790 ₽</span>
+            </div>
+            <a class="product-card__details" href="#popular">Подробнее о кофе →</a>
+          </article>
+          <article class="product-card product-card--filter">
+            <a class="product-card__image-link" href="#popular" aria-label="Подробнее: Эфиопия Сидамо">
+              <img class="product-card__image" src="images/ethiopia.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Эфиопия Сидамо">
+              <span class="product-card__badge">Яркий вкус</span>
+              <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="product-card__meta">
+              <span>Для фильтра</span>
+              <span>250 г</span>
+            </div>
+            <h3 class="product-card__title">
+              <a href="#popular">Эфиопия Сидамо</a>
+            </h3>
+            <p class="product-card__description">Бергамот · абрикос · чёрный чай</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">990 ₽</span>
+            </div>
+            <a class="product-card__details" href="#popular">Подробнее о кофе →</a>
+          </article>
+          <article class="product-card product-card--filter">
+            <a class="product-card__image-link" href="#popular" aria-label="Подробнее: Колумбия Уила">
+              <img class="product-card__image" src="images/colombia.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Колумбия Уила">
+              <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+            </a>
+            <div class="product-card__meta">
+              <span>Для фильтра</span>
+              <span>250 г</span>
+            </div>
+            <h3 class="product-card__title">
+              <a href="#popular">Колумбия Уила</a>
+            </h3>
+            <p class="product-card__description">Красное яблоко · какао · изюм</p>
+            <div class="product-card__bottom">
+              <span class="product-card__price">890 ₽</span>
+            </div>
+            <a class="product-card__details" href="#popular">Подробнее о кофе →</a>
+          </article>
+        </div>
+      </section>
+      <section class="brew-banner container">
+        <img src="images/brew.svg" width="700" height="600" loading="lazy" alt="Керамическая воронка на сервере для кофе">
+        <div class="brew-banner__copy">
+          <p class="eyebrow">МАЛЕНЬКИЙ ГИД</p>
+          <h2>Пять минут.<br>И только ваша чашка.</h2>
+          <p>Не обязательно быть бариста. Начните с понятной пропорции, подходящего помола и одного простого рецепта.</p>
+          <a class="text-link" href="#advantages">Открыть гид по завариванию ↗</a>
+        </div>
+      </section>
+      <aside class="help-strip container">
+        <p>Пока не знаете, что выбрать?</p>
+      </aside>
     </main>
-    <footer>© 2026 Учебный проект</footer>
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="site-footer__logo" href="index.html">2much</a>
+            <p>Заряд настроения на весь день.</p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="#popular">Выбрать кофе</a>
+            <a href="#popular">Оформить заявку</a>
+            <a href="#contacts">Контакты</a>
+          </nav>
+          <nav aria-label="Разделы главной страницы">
+            <a href="#advantages">Наш подход</a>
+            <a href="#popular">Выбор на каждый день</a>
+            <a href="#advantages">Рецепты</a>
+          </nav>
+        </div>
+        <div class="site-footer__bottom">
+          <span>© 2026 2much</span>
+          <span>Учебный магазин. Покупки и отправка данных недоступны.</span>
+          <a href="#contacts">Обработка данных</a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-top" href="#top" aria-label="Наверх">↑</a>
   </body>
 </html>
