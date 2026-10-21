@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бразилия Серрадо - 2much</title>
+    <meta name="description" content="Бразилия Серрадо: Шоколад · фундук · карамель. Описание, характеристики и заявка в учебном магазине 2much.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">Заряд настроения на весь день</div>
+    <header class="site-header" id="top">
+      <div class="site-header__inner container">
+        <a class="site-header__logo" href="index.html" aria-label="2much - на главную">2much<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="guide.html">Как заваривать</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__order" href="order.html">Оставить заявку <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+    <main id="main">
+      <nav class="breadcrumbs container" aria-label="Хлебные крошки">
+        <ol>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="catalog.html">Каталог</a>
+          </li>
+          <li>
+            <span aria-current="page">Бразилия Серрадо</span>
+          </li>
+        </ol>
+      </nav>
+      <section class="product-detail container">
+        <div class="product-detail__visual">
+          <img src="images/brazil.svg" width="600" height="600" alt="Бразилия Серрадо - упаковка кофе">
+        </div>
+        <div class="product-detail__copy">
+          <p class="eyebrow">Для эспрессо / 250 г</p>
+          <h1>Бразилия Серрадо</h1>
+          <p class="product-detail__notes">Шоколад · фундук · карамель</p>
+          <p>Плотный, сладкий кофе с невысокой кислотностью. Для первого знакомства с зерном и привычной чашки с молоком.</p>
+          <p class="product-detail__price">790 ₽ <small>/ 250 г</small>
+          </p>
+          <button class="button" type="button" data-product="brazil">Оставить заявку <span aria-hidden="true">↗</span>
+          </button>
+          <a class="product-detail__order-link" href="order.html?product=brazil">Перейти к полной форме заявки →</a>
+          <p class="product-detail__disclaimer">Учебная карточка. Сведения и цены иллюстративные.</p>
+          <nav class="product-detail__anchors" aria-label="Разделы товара">
+            <a href="#specifications">Характеристики ↓</a>
+            <a href="guide.html#recipes">Как приготовить ↗</a>
+          </nav>
+        </div>
+      </section>
+      <section class="specifications container section" id="specifications">
+        <div>
+          <p class="eyebrow">БЕЗ МЕЛКОГО ШРИФТА</p>
+          <h2>Всё о зерне.</h2>
+          <p>Ноты описывают оттенки вкуса, а не добавленные ароматизаторы.</p>
+        </div>
+        <div class="table-wrap">
+          <table class="spec-table">
+            <caption>Характеристики: Бразилия Серрадо</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Страна</th>
+                <td>Бразилия</td>
+              </tr>
+              <tr>
+                <th scope="row">Регион</th>
+                <td>Серрадо</td>
+              </tr>
+              <tr>
+                <th scope="row">Обработка</th>
+                <td>Натуральная</td>
+              </tr>
+              <tr>
+                <th scope="row">Обжарка</th>
+                <td>Под эспрессо</td>
+              </tr>
+              <tr>
+                <th scope="row">Состав</th>
+                <td>100% арабика</td>
+              </tr>
+              <tr>
+                <th scope="row">Масса нетто</th>
+                <td>250 г</td>
+              </tr>
+              <tr>
+                <th scope="row">Упаковка</th>
+                <td>Пакет с дегазационным клапаном</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <aside class="help-strip container">
+        <p>Нужна помощь со способом приготовления?</p>
+        <a class="text-link" href="guide.html">Посмотреть рецепты ↗</a>
+      </aside>
+      <dialog class="order-dialog" id="order-dialog" aria-labelledby="dialog-title">
+        <button class="order-dialog__close" type="button" data-close-dialog aria-label="Закрыть форму">×</button>
+        <p class="eyebrow">ВАША СЛЕДУЮЩАЯ ЧАШКА</p>
+        <h2 id="dialog-title">Оставить заявку</h2>
+        <form class="order-form" id="quick-form" action="#" method="post" novalidate>
+          <input type="hidden" id="quick-selected-product" name="selected-product">
+          <p class="order-form__intro">Поля со звёздочкой обязательны. Это демонстрация: данные не сохраняются и не отправляются.</p>
+          <div class="order-form__grid">
+            <div class="order-form__field">
+              <label for="quick-name">Имя *</label>
+              <input id="quick-name" name="name" type="text" minlength="2" maxlength="80" autocomplete="given-name" placeholder="Как к вам обращаться" required aria-describedby="quick-name-hint quick-name-error">
+              <small id="quick-name-hint">Не менее двух символов.</small>
+              <span class="order-form__error" id="quick-name-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-email">Электронная почта *</label>
+              <input id="quick-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="quick-email-error">
+              <span class="order-form__error" id="quick-email-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-phone">Телефон *</label>
+              <input id="quick-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required aria-describedby="quick-phone-hint quick-phone-error">
+              <small id="quick-phone-hint">Формат: +7 (900) 000-00-00.</small>
+              <span class="order-form__error" id="quick-phone-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-date">Удобная дата связи</label>
+              <input id="quick-date" name="date" type="date" aria-describedby="quick-date-error">
+              <span class="order-form__error" id="quick-date-error"></span>
+            </div>
+            <div class="order-form__field order-form__field--wide">
+              <label for="quick-product">Товар или тема заявки *</label>
+              <select id="quick-product" name="product" required aria-describedby="quick-product-error">
+                <option value="">Выберите товар или консультацию</option>
+                <option value="brazil">Бразилия Серрадо - 790 ₽</option>
+                <option value="ethiopia">Эфиопия Сидамо - 990 ₽</option>
+                <option value="colombia">Колумбия Уила - 890 ₽</option>
+                <option value="decaf">Вечерний ритуал - 1090 ₽</option>
+                <option value="dripper">Воронка 02 - 1590 ₽</option>
+                <option value="consultation">Помочь с выбором</option>
+              </select>
+              <span class="order-form__error" id="quick-product-error"></span>
+            </div>
+            <div class="order-form__field order-form__field--wide">
+              <label for="quick-comment">Комментарий</label>
+              <textarea id="quick-comment" name="comment" rows="4" maxlength="1000" placeholder="Например: нужен помол для гейзерной кофеварки"></textarea>
+            </div>
+          </div>
+          <div class="order-form__field order-form__field--checkbox">
+            <input id="quick-agreement" name="agreement" type="checkbox" required aria-describedby="quick-agreement-error">
+            <label for="quick-agreement">Я согласен с <a href="privacy.html">условиями обработки данных</a> *</label>
+            <span class="order-form__error" id="quick-agreement-error"></span>
+          </div>
+          <p class="order-form__summary" role="alert" hidden></p>
+          <div class="order-form__actions">
+            <button class="button" type="submit">Отправить заявку <span aria-hidden="true">↗</span>
+            </button>
+            <button class="button button--plain" type="button" data-close-dialog>Отмена</button>
+          </div>
+        </form>
+      </dialog>
+      <section class="success-message container" role="status" id="success-message" tabindex="-1" hidden>
+        <h2>Форма успешно отправлена!</h2>
+        <p>Демонстрация завершена: поля проверены и очищены. Данные остались в браузере и не передавались на сервер.</p>
+        <a href="catalog.html">Вернуться к выбору кофе →</a>
+      </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="site-footer__logo" href="index.html">2much</a>
+            <p>Заряд настроения на весь день.</p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="catalog.html">Выбрать кофе</a>
+            <a href="order.html">Оформить заявку</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+          <nav aria-label="Разделы главной страницы">
+            <a href="index.html#advantages">Наш подход</a>
+            <a href="index.html#popular">Выбор на каждый день</a>
+            <a href="guide.html#recipes">Рецепты</a>
+          </nav>
+        </div>
+        <div class="site-footer__bottom">
+          <span>© 2026 2much</span>
+          <span>Учебный магазин. Покупки и отправка данных недоступны.</span>
+          <a href="privacy.html">Обработка данных</a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-top" href="#top" aria-label="Наверх">↑</a>
+  </body>
+</html>

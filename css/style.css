@@ -117,7 +117,7 @@ em {
 }
 
 .section__heading {
-  display: block;
+  display: flex;
   justify-content: space-between;
   align-items: end;
   gap: var(--space-lg);
@@ -162,7 +162,7 @@ em {
 }
 
 .button {
-  display: inline-block;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   gap: var(--space-xl);
@@ -235,7 +235,7 @@ button:disabled, .button--disabled {
   z-index: 5;
   width: 40px;
   height: 40px;
-  display: block;
+  display: grid;
   place-items: center;
   background: var(--color-paper);
   border: 1px solid var(--color-border);
@@ -266,7 +266,7 @@ button:disabled, .button--disabled {
 
 .site-header__inner {
   min-height: 94px;
-  display: block;
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: var(--space-xl);
@@ -289,7 +289,7 @@ button:disabled, .button--disabled {
 }
 
 .site-nav__list {
-  display: block;
+  display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 28px;
@@ -311,7 +311,7 @@ button:disabled, .button--disabled {
 }
 
 .site-header__order {
-  display: block;
+  display: flex;
   gap: 28px;
   align-items: center;
   text-decoration: none;
@@ -320,7 +320,7 @@ button:disabled, .button--disabled {
 
 /* 5. Главная страница */
 .hero {
-  display: block;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-2xl);
   padding-block: var(--space-2xl) var(--space-3xl);
@@ -353,7 +353,7 @@ button:disabled, .button--disabled {
 }
 
 .hero__note {
-  display: block;
+  display: flex;
   gap: var(--space-md);
   align-items: center;
   margin-top: var(--space-2xl);
@@ -392,7 +392,7 @@ button:disabled, .button--disabled {
 }
 
 .approach__grid {
-  display: block;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-2xl);
   margin-top: var(--space-xl);
@@ -417,7 +417,7 @@ button:disabled, .button--disabled {
 }
 
 .brew-banner {
-  display: block;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   background: var(--color-sage);
 }
@@ -445,7 +445,7 @@ button:disabled, .button--disabled {
 }
 
 .help-strip {
-  display: block;
+  display: flex;
   justify-content: space-between;
   gap: var(--space-xl);
   align-items: center;
@@ -460,7 +460,7 @@ button:disabled, .button--disabled {
 
 /* 6. Карточки, каталог и фильтры */
 .product-grid {
-  display: block;
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: var(--space-lg);
 }
@@ -509,7 +509,7 @@ button:disabled, .button--disabled {
 }
 
 .product-card__meta {
-  display: block;
+  display: flex;
   justify-content: space-between;
   gap: var(--space-sm);
   color: var(--color-muted);
@@ -533,7 +533,7 @@ button:disabled, .button--disabled {
 }
 
 .product-card__bottom {
-  display: block;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   gap: var(--space-md);
@@ -550,7 +550,7 @@ button:disabled, .button--disabled {
   background: transparent;
   padding: 5px 0 5px 12px;
   font-size: 12px;
-  display: block;
+  display: flex;
   gap: 16px;
   align-items: center;
 }
@@ -577,7 +577,7 @@ button:disabled, .button--disabled {
 }
 
 .breadcrumbs ol {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   gap: var(--space-sm);
   list-style: none;
@@ -592,7 +592,7 @@ button:disabled, .button--disabled {
 }
 
 .catalog-layout {
-  display: block;
+  display: grid;
   grid-template-columns: 215px minmax(0, 1fr);
   gap: var(--space-2xl);
   align-items: start;
@@ -615,7 +615,7 @@ button:disabled, .button--disabled {
 }
 
 .catalog-filters label {
-  display: block;
+  display: flex;
   align-items: center;
   gap: 8px;
   font-size: 13px;
@@ -659,7 +659,7 @@ button:disabled, .button--disabled {
 }
 
 .catalog-caption {
-  display: block;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--space-sm);
@@ -688,7 +688,7 @@ button:disabled, .button--disabled {
 
 /* 7. Подробная карточка и таблица */
 .product-detail {
-  display: block;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
   margin-top: var(--space-xl);
@@ -737,7 +737,7 @@ button:disabled, .button--disabled {
 }
 
 .product-detail__anchors {
-  display: block;
+  display: flex;
   flex-wrap: wrap;
   gap: var(--space-lg);
   margin-top: var(--space-xl);
@@ -747,7 +747,7 @@ button:disabled, .button--disabled {
 }
 
 .specifications {
-  display: block;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
 }
@@ -797,7 +797,7 @@ button:disabled, .button--disabled {
 
 /* 8. Форма, модальное окно и сообщения */
 .order-layout {
-  display: block;
+  display: grid;
   grid-template-columns: minmax(0, 1.5fr) minmax(220px, .7fr);
   gap: 80px;
   align-items: start;
@@ -810,7 +810,7 @@ button:disabled, .button--disabled {
 }
 
 .order-form__grid {
-  display: block;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: var(--space-lg);
 }
@@ -856,7 +856,7 @@ button:disabled, .button--disabled {
 }
 
 .order-form__field--checkbox {
-  display: block;
+  display: grid;
   grid-template-columns: 19px 1fr;
   align-items: start;
   gap: 0 9px;
@@ -893,7 +893,7 @@ button:disabled, .button--disabled {
 }
 
 .order-form__actions {
-  display: block;
+  display: flex;
   gap: var(--space-lg);
   align-items: center;
   flex-wrap: wrap;
@@ -990,7 +990,7 @@ body:has(.order-dialog[open]) {
 
 /* 9. Контакты, гид и дополнительные разделы */
 .contact-layout, .guide-intro {
-  display: block;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
 }
@@ -1088,7 +1088,7 @@ body:has(.order-dialog[open]) {
 }
 
 .choice-grid {
-  display: block;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 64px;
   margin-top: var(--space-xl);
@@ -1121,7 +1121,7 @@ body:has(.order-dialog[open]) {
 }
 
 .recipe-grid {
-  display: block;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: var(--space-xl);
   margin-top: var(--space-xl);
@@ -1187,7 +1187,7 @@ body:has(.order-dialog[open]) {
 }
 
 .site-footer__top {
-  display: block;
+  display: grid;
   grid-template-columns: 1.5fr 1fr 1fr;
   gap: var(--space-xl);
   padding-bottom: var(--space-2xl);
@@ -1208,7 +1208,7 @@ body:has(.order-dialog[open]) {
 }
 
 .site-footer nav {
-  display: block;
+  display: flex;
   flex-direction: column;
   align-items: start;
   gap: 12px;
@@ -1220,7 +1220,7 @@ body:has(.order-dialog[open]) {
 }
 
 .site-footer__bottom {
-  display: block;
+  display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: var(--space-md);
@@ -1471,7 +1471,7 @@ body:has(.order-dialog[open]) {
   }
 
   .catalog-filters fieldset {
-    display: block;
+    display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: var(--space-lg);
   }
@@ -1579,30 +1579,4 @@ body:has(.order-dialog[open]) {
     width: 100%;
   }
 
-}
-
-/* Последовательная раскладка до практики Flex/Grid. */
-.hero,.approach__grid,.product-grid,.brew-banner,.order-form__grid {
-  display: block;
-}
-
-.hero__visual {
-  max-width: 560px;
-  margin-top: 32px;
-}
-
-.product-card {
-  margin-bottom: 28px;
-}
-
-.product-card__image {
-  max-width: 330px;
-}
-
-.approach article {
-  margin-bottom: 20px;
-}
-
-.order-form__field {
-  margin-bottom: 16px;
 }

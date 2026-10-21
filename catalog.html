@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог кофе и аксессуаров - 2much</title>
+    <meta name="description" content="Зерно для эспрессо и фильтра, кофе без кофеина и аксессуары. Каталог учебного магазина 2much.">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Перейти к содержимому</a>
+    <div class="announcement">Заряд настроения на весь день</div>
+    <header class="site-header" id="top">
+      <div class="site-header__inner container">
+        <a class="site-header__logo" href="index.html" aria-label="2much - на главную">2much<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
+        </a>
+        <nav class="site-nav" aria-label="Основная навигация">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--active" href="catalog.html" aria-current="page">Каталог</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="guide.html">Как заваривать</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="site-header__order" href="order.html">Оставить заявку <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </header>
+    <main id="main">
+      <nav class="breadcrumbs container" aria-label="Хлебные крошки">
+        <ol>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <span aria-current="page">Каталог</span>
+          </li>
+        </ol>
+      </nav>
+      <section class="container section section--first">
+        <div class="page-heading">
+          <p class="eyebrow">КОФЕ И ВЕЩИ ДЛЯ НЕГО</p>
+          <h1>Найдите свой вкус.</h1>
+          <p>Начните со способа приготовления. Или просто с того, что нравится.</p>
+        </div>
+        <div class="catalog-layout">
+          <aside class="catalog-filters" aria-label="Фильтры каталога">
+            <fieldset>
+              <legend>Что ищем?</legend>
+              <label for="filter-all">
+                <input type="radio" name="category" id="filter-all" checked> Всё <span>06</span>
+              </label>
+              <label for="filter-espresso">
+                <input type="radio" name="category" id="filter-espresso"> Для эспрессо <span>02</span>
+              </label>
+              <label for="filter-filter">
+                <input type="radio" name="category" id="filter-filter"> Для фильтра <span>02</span>
+              </label>
+              <label for="filter-tools">
+                <input type="radio" name="category" id="filter-tools"> Аксессуары <span>02</span>
+              </label>
+            </fieldset>
+            <p class="catalog-filters__hint">Выберите категорию - останутся подходящие товары.</p>
+            <div class="catalog-filters__help">
+              <span class="eyebrow">НЕ УВЕРЕНЫ?</span>
+              <p>Шоколадные ноты - для спокойного старта. Фруктовые - если хочется нового.</p>
+              <a href="guide.html#choose">Как выбрать зерно →</a>
+            </div>
+          </aside>
+          <div>
+            <p class="catalog-caption">КОЛЛЕКЦИЯ 2much <span>Цены за одну упаковку или предмет</span>
+            </p>
+            <div class="product-grid product-grid--catalog">
+              <article class="product-card product-card--espresso">
+                <a class="product-card__image-link" href="product.html" aria-label="Подробнее: Бразилия Серрадо">
+                  <img class="product-card__image" src="images/brazil.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Бразилия Серрадо">
+                  <span class="product-card__badge">Начните с него</span>
+                  <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+                </a>
+                <div class="product-card__meta">
+                  <span>Для эспрессо</span>
+                  <span>250 г</span>
+                </div>
+                <h3 class="product-card__title">
+                  <a href="product.html">Бразилия Серрадо</a>
+                </h3>
+                <p class="product-card__description">Шоколад · фундук · карамель</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">790 ₽</span>
+                  <button class="product-card__button" type="button" data-product="brazil">Заказать <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+                <a class="product-card__details" href="product.html">Подробнее о кофе →</a>
+              </article>
+              <article class="product-card product-card--filter">
+                <a class="product-card__image-link" href="product-ethiopia.html" aria-label="Подробнее: Эфиопия Сидамо">
+                  <img class="product-card__image" src="images/ethiopia.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Эфиопия Сидамо">
+                  <span class="product-card__badge">Яркий вкус</span>
+                  <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+                </a>
+                <div class="product-card__meta">
+                  <span>Для фильтра</span>
+                  <span>250 г</span>
+                </div>
+                <h3 class="product-card__title">
+                  <a href="product-ethiopia.html">Эфиопия Сидамо</a>
+                </h3>
+                <p class="product-card__description">Бергамот · абрикос · чёрный чай</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">990 ₽</span>
+                  <button class="product-card__button" type="button" data-product="ethiopia">Заказать <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+                <a class="product-card__details" href="product-ethiopia.html">Подробнее о кофе →</a>
+              </article>
+              <article class="product-card product-card--filter">
+                <a class="product-card__image-link" href="product-colombia.html" aria-label="Подробнее: Колумбия Уила">
+                  <img class="product-card__image" src="images/colombia.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Колумбия Уила">
+                  <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+                </a>
+                <div class="product-card__meta">
+                  <span>Для фильтра</span>
+                  <span>250 г</span>
+                </div>
+                <h3 class="product-card__title">
+                  <a href="product-colombia.html">Колумбия Уила</a>
+                </h3>
+                <p class="product-card__description">Красное яблоко · какао · изюм</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">890 ₽</span>
+                  <button class="product-card__button" type="button" data-product="colombia">Заказать <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+                <a class="product-card__details" href="product-colombia.html">Подробнее о кофе →</a>
+              </article>
+              <article class="product-card product-card--espresso">
+                <a class="product-card__image-link" href="product-decaf.html" aria-label="Подробнее: Вечерний ритуал">
+                  <img class="product-card__image" src="images/decaf.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Вечерний ритуал">
+                  <span class="product-card__badge">Без кофеина</span>
+                  <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+                </a>
+                <div class="product-card__meta">
+                  <span>Без кофеина</span>
+                  <span>250 г</span>
+                </div>
+                <h3 class="product-card__title">
+                  <a href="product-decaf.html">Вечерний ритуал</a>
+                </h3>
+                <p class="product-card__description">Какао · тростниковый сахар · слива</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">1090 ₽</span>
+                  <button class="product-card__button" type="button" data-product="decaf">Заказать <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+                <a class="product-card__details" href="product-decaf.html">Подробнее о кофе →</a>
+              </article>
+              <article class="product-card product-card--tools">
+                <a class="product-card__image-link" href="product-dripper.html" aria-label="Подробнее: Воронка 02">
+                  <img class="product-card__image" src="images/dripper.svg" width="600" height="600" loading="lazy" alt="Воронка 02">
+                  <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+                </a>
+                <div class="product-card__meta">
+                  <span>Аксессуары</span>
+                  <span>размер 02</span>
+                </div>
+                <h3 class="product-card__title">
+                  <a href="product-dripper.html">Воронка 02</a>
+                </h3>
+                <p class="product-card__description">Керамика · на 1-2 чашки</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">1590 ₽</span>
+                  <button class="product-card__button" type="button" data-product="dripper">Заказать <span aria-hidden="true">+</span>
+                  </button>
+                </div>
+                <a class="product-card__details" href="product-dripper.html">Подробнее о товаре →</a>
+              </article>
+              <article class="product-card product-card--tools product-card--unavailable">
+                <a class="product-card__image-link" href="product-cup.html" aria-label="Подробнее: Кружка «Пауза»">
+                  <img class="product-card__image" src="images/cup.svg" width="600" height="600" loading="lazy" alt="Кружка «Пауза»">
+                  <span class="product-card__badge">Скоро в наличии</span>
+                  <span class="product-card__image-arrow" aria-hidden="true">↗</span>
+                </a>
+                <div class="product-card__meta">
+                  <span>Аксессуары</span>
+                  <span>250 мл</span>
+                </div>
+                <h3 class="product-card__title">
+                  <a href="product-cup.html">Кружка «Пауза»</a>
+                </h3>
+                <p class="product-card__description">Матовая керамика · 250 мл</p>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">1290 ₽</span>
+                  <button class="product-card__button" type="button" data-product="cup" disabled>Скоро <span aria-hidden="true">-</span>
+                  </button>
+                </div>
+                <a class="product-card__details" href="product-cup.html">Подробнее о товаре →</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container section faq">
+        <p class="eyebrow">ПЕРЕД ПЕРВОЙ ЧАШКОЙ</p>
+        <h2>Есть вопрос?</h2>
+        <details>
+          <summary>Чем отличается кофе для эспрессо и фильтра?</summary>
+          <p>Обжарка под эспрессо помогает получить плотную чашку при коротком приготовлении. Фильтр обычно раскрывает более лёгкий и яркий профиль. Это ориентир для выбора, а не запрет на эксперименты.</p>
+        </details>
+        <details>
+          <summary>Можно ли заказать молотый кофе?</summary>
+          <p>В учебном каталоге указано зерно. Пожелание о помоле можно написать в комментарии к заявке. Реальные заказы на этом сайте не принимаются.</p>
+        </details>
+        <details>
+          <summary>Как хранить открытую пачку?</summary>
+          <p>Плотно закрывайте пакет и держите его в сухом месте, вдали от солнца и сильных запахов.</p>
+        </details>
+      </section>
+      <dialog class="order-dialog" id="order-dialog" aria-labelledby="dialog-title">
+        <button class="order-dialog__close" type="button" data-close-dialog aria-label="Закрыть форму">×</button>
+        <p class="eyebrow">ВАША СЛЕДУЮЩАЯ ЧАШКА</p>
+        <h2 id="dialog-title">Оставить заявку</h2>
+        <form class="order-form" id="quick-form" action="#" method="post" novalidate>
+          <input type="hidden" id="quick-selected-product" name="selected-product">
+          <p class="order-form__intro">Поля со звёздочкой обязательны. Это демонстрация: данные не сохраняются и не отправляются.</p>
+          <div class="order-form__grid">
+            <div class="order-form__field">
+              <label for="quick-name">Имя *</label>
+              <input id="quick-name" name="name" type="text" minlength="2" maxlength="80" autocomplete="given-name" placeholder="Как к вам обращаться" required aria-describedby="quick-name-hint quick-name-error">
+              <small id="quick-name-hint">Не менее двух символов.</small>
+              <span class="order-form__error" id="quick-name-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-email">Электронная почта *</label>
+              <input id="quick-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required aria-describedby="quick-email-error">
+              <span class="order-form__error" id="quick-email-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-phone">Телефон *</label>
+              <input id="quick-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+7 (900) 000-00-00" pattern="\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}" required aria-describedby="quick-phone-hint quick-phone-error">
+              <small id="quick-phone-hint">Формат: +7 (900) 000-00-00.</small>
+              <span class="order-form__error" id="quick-phone-error"></span>
+            </div>
+            <div class="order-form__field">
+              <label for="quick-date">Удобная дата связи</label>
+              <input id="quick-date" name="date" type="date" aria-describedby="quick-date-error">
+              <span class="order-form__error" id="quick-date-error"></span>
+            </div>
+            <div class="order-form__field order-form__field--wide">
+              <label for="quick-product">Товар или тема заявки *</label>
+              <select id="quick-product" name="product" required aria-describedby="quick-product-error">
+                <option value="">Выберите товар или консультацию</option>
+                <option value="brazil">Бразилия Серрадо - 790 ₽</option>
+                <option value="ethiopia">Эфиопия Сидамо - 990 ₽</option>
+                <option value="colombia">Колумбия Уила - 890 ₽</option>
+                <option value="decaf">Вечерний ритуал - 1090 ₽</option>
+                <option value="dripper">Воронка 02 - 1590 ₽</option>
+                <option value="consultation">Помочь с выбором</option>
+              </select>
+              <span class="order-form__error" id="quick-product-error"></span>
+            </div>
+            <div class="order-form__field order-form__field--wide">
+              <label for="quick-comment">Комментарий</label>
+              <textarea id="quick-comment" name="comment" rows="4" maxlength="1000" placeholder="Например: нужен помол для гейзерной кофеварки"></textarea>
+            </div>
+          </div>
+          <div class="order-form__field order-form__field--checkbox">
+            <input id="quick-agreement" name="agreement" type="checkbox" required aria-describedby="quick-agreement-error">
+            <label for="quick-agreement">Я согласен с <a href="privacy.html">условиями обработки данных</a> *</label>
+            <span class="order-form__error" id="quick-agreement-error"></span>
+          </div>
+          <p class="order-form__summary" role="alert" hidden></p>
+          <div class="order-form__actions">
+            <button class="button" type="submit">Отправить заявку <span aria-hidden="true">↗</span>
+            </button>
+            <button class="button button--plain" type="button" data-close-dialog>Отмена</button>
+          </div>
+        </form>
+      </dialog>
+      <section class="success-message container" role="status" id="success-message" tabindex="-1" hidden>
+        <h2>Форма успешно отправлена!</h2>
+        <p>Демонстрация завершена: поля проверены и очищены. Данные остались в браузере и не передавались на сервер.</p>
+        <a href="catalog.html">Вернуться к выбору кофе →</a>
+      </section>
+    </main>
+    <footer class="site-footer" id="contacts">
+      <div class="container">
+        <div class="site-footer__top">
+          <div>
+            <a class="site-footer__logo" href="index.html">2much</a>
+            <p>Заряд настроения на весь день.</p>
+          </div>
+          <nav aria-label="Навигация в подвале">
+            <a href="catalog.html">Выбрать кофе</a>
+            <a href="order.html">Оформить заявку</a>
+            <a href="contacts.html">Контакты</a>
+          </nav>
+          <nav aria-label="Разделы главной страницы">
+            <a href="index.html#advantages">Наш подход</a>
+            <a href="index.html#popular">Выбор на каждый день</a>
+            <a href="guide.html#recipes">Рецепты</a>
+          </nav>
+        </div>
+        <div class="site-footer__bottom">
+          <span>© 2026 2much</span>
+          <span>Учебный магазин. Покупки и отправка данных недоступны.</span>
+          <a href="privacy.html">Обработка данных</a>
+        </div>
+      </div>
+    </footer>
+    <a class="back-top" href="#top" aria-label="Наверх">↑</a>
+  </body>
+</html>
