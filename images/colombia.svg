@@ -5,12 +5,12 @@
     <path d="M21 408H220L242 432H0Z" fill="#b6a98c"/>
     <path d="M32 52H196" stroke="#a99b7e" stroke-width="3"/>
     <rect x="26" y="90" width="188" height="260" fill="#d29b48"/>
-    <text x="40" y="130" fill="#fff9eb" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="-1">СМЕНА</text>
+    <text x="40" y="130" fill="#fff9eb" font-family="Arial,sans-serif" font-size="29" font-weight="700" letter-spacing="-1">2much</text>
     <path d="M40 150H200" stroke="#fff9eb" opacity=".6"/>
     <text x="40" y="212" fill="#fff9eb" font-family="Georgia,serif" font-size="68">03</text>
     <text x="40" y="258" fill="#fff9eb" font-family="Arial,sans-serif" font-size="18" letter-spacing="1">COLOMBIA</text>
     <text x="40" y="281" fill="#fff9eb" font-family="Arial,sans-serif" font-size="10">КОФЕ В ЗЁРНАХ / 250 Г</text>
     <path d="M40 305H200" stroke="#fff9eb" opacity=".6"/>
-    <text x="40" y="329" fill="#fff9eb" font-family="Arial,sans-serif" font-size="11">ХОРОШЕЕ ВРЕМЯ ДЛЯ КОФЕ</text>
+    <text x="40" y="329" fill="#fff9eb" font-family="Arial,sans-serif" font-size="11">ЗАРЯД НАСТРОЕНИЯ</text>
     <circle cx="122" cy="68" r="7" fill="#a99b7e"/><circle cx="122" cy="68" r="3" fill="#746a55"/>
     </g></svg>
