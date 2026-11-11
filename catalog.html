@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Каталог кофе и аксессуаров - 2much</title>
-    <meta name="description" content="Зерно для эспрессо и фильтра, кофе без кофеина и аксессуары. Каталог учебного магазина 2much.">
+    <title>Каталог кофе и аксессуаров — СМЕНА</title>
+    <meta name="description" content="Зерно для эспрессо и фильтра, кофе без кофеина и аксессуары. Каталог учебного магазина СМЕНА.">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/data.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
-    <div class="announcement">Заряд настроения на весь день</div>
+    <div class="announcement">Хорошее время для кофе. Найдите свой вкус.</div>
     <header class="site-header" id="top">
       <div class="site-header__inner container">
-        <a class="site-header__logo" href="index.html" aria-label="2much - на главную">2much<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
+        <a class="site-header__logo" href="index.html" aria-label="Смена — на главную">СМЕНА<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
         </a>
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
@@ -52,6 +54,7 @@
           <p class="eyebrow">КОФЕ И ВЕЩИ ДЛЯ НЕГО</p>
           <h1>Найдите свой вкус.</h1>
           <p>Начните со способа приготовления. Или просто с того, что нравится.</p>
+          <p id="catalog-stats" class="catalog-stats" aria-live="polite"></p>
         </div>
         <div class="catalog-layout">
           <aside class="catalog-filters" aria-label="Фильтры каталога">
@@ -70,20 +73,21 @@
                 <input type="radio" name="category" id="filter-tools"> Аксессуары <span>02</span>
               </label>
             </fieldset>
-            <p class="catalog-filters__hint">Выберите категорию - останутся подходящие товары.</p>
+            <p class="catalog-filters__hint">Выберите категорию — останутся подходящие товары.</p>
             <div class="catalog-filters__help">
               <span class="eyebrow">НЕ УВЕРЕНЫ?</span>
-              <p>Шоколадные ноты - для спокойного старта. Фруктовые - если хочется нового.</p>
+              <p>Шоколадные ноты — для спокойного старта. Фруктовые — если хочется нового.</p>
               <a href="guide.html#choose">Как выбрать зерно →</a>
             </div>
           </aside>
           <div>
-            <p class="catalog-caption">КОЛЛЕКЦИЯ 2much <span>Цены за одну упаковку или предмет</span>
+            <h2 class="visually-hidden">Товары</h2>
+            <p class="catalog-caption">КОЛЛЕКЦИЯ СМЕНЫ <span>Цены за одну упаковку или предмет</span>
             </p>
             <div class="product-grid product-grid--catalog">
               <article class="product-card product-card--espresso">
                 <a class="product-card__image-link" href="product.html" aria-label="Подробнее: Бразилия Серрадо">
-                  <img class="product-card__image" src="images/brazil.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Бразилия Серрадо">
+                  <img class="product-card__image" src="images/brazil.svg" srcset="images/brazil-small.svg 320w, images/brazil.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Упаковка кофе Бразилия Серрадо">
                   <span class="product-card__badge">Начните с него</span>
                   <span class="product-card__image-arrow" aria-hidden="true">↗</span>
                 </a>
@@ -104,7 +108,7 @@
               </article>
               <article class="product-card product-card--filter">
                 <a class="product-card__image-link" href="product-ethiopia.html" aria-label="Подробнее: Эфиопия Сидамо">
-                  <img class="product-card__image" src="images/ethiopia.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Эфиопия Сидамо">
+                  <img class="product-card__image" src="images/ethiopia.svg" srcset="images/ethiopia-small.svg 320w, images/ethiopia.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Упаковка кофе Эфиопия Сидамо">
                   <span class="product-card__badge">Яркий вкус</span>
                   <span class="product-card__image-arrow" aria-hidden="true">↗</span>
                 </a>
@@ -125,7 +129,7 @@
               </article>
               <article class="product-card product-card--filter">
                 <a class="product-card__image-link" href="product-colombia.html" aria-label="Подробнее: Колумбия Уила">
-                  <img class="product-card__image" src="images/colombia.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Колумбия Уила">
+                  <img class="product-card__image" src="images/colombia.svg" srcset="images/colombia-small.svg 320w, images/colombia.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Упаковка кофе Колумбия Уила">
                   <span class="product-card__image-arrow" aria-hidden="true">↗</span>
                 </a>
                 <div class="product-card__meta">
@@ -144,8 +148,8 @@
                 <a class="product-card__details" href="product-colombia.html">Подробнее о кофе →</a>
               </article>
               <article class="product-card product-card--espresso">
-                <a class="product-card__image-link" href="product-decaf.html" aria-label="Подробнее: Вечерний ритуал">
-                  <img class="product-card__image" src="images/decaf.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Вечерний ритуал">
+                <a class="product-card__image-link" href="product-decaf.html" aria-label="Подробнее: Вечерняя смена">
+                  <img class="product-card__image" src="images/decaf.svg" srcset="images/decaf-small.svg 320w, images/decaf.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Упаковка кофе Вечерняя смена">
                   <span class="product-card__badge">Без кофеина</span>
                   <span class="product-card__image-arrow" aria-hidden="true">↗</span>
                 </a>
@@ -154,7 +158,7 @@
                   <span>250 г</span>
                 </div>
                 <h3 class="product-card__title">
-                  <a href="product-decaf.html">Вечерний ритуал</a>
+                  <a href="product-decaf.html">Вечерняя смена</a>
                 </h3>
                 <p class="product-card__description">Какао · тростниковый сахар · слива</p>
                 <div class="product-card__bottom">
@@ -166,7 +170,7 @@
               </article>
               <article class="product-card product-card--tools">
                 <a class="product-card__image-link" href="product-dripper.html" aria-label="Подробнее: Воронка 02">
-                  <img class="product-card__image" src="images/dripper.svg" width="600" height="600" loading="lazy" alt="Воронка 02">
+                  <img class="product-card__image" src="images/dripper.svg" srcset="images/dripper-small.svg 320w, images/dripper.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Воронка 02">
                   <span class="product-card__image-arrow" aria-hidden="true">↗</span>
                 </a>
                 <div class="product-card__meta">
@@ -176,7 +180,7 @@
                 <h3 class="product-card__title">
                   <a href="product-dripper.html">Воронка 02</a>
                 </h3>
-                <p class="product-card__description">Керамика · на 1-2 чашки</p>
+                <p class="product-card__description">Керамика · на 1–2 чашки</p>
                 <div class="product-card__bottom">
                   <span class="product-card__price">1590 ₽</span>
                   <button class="product-card__button" type="button" data-product="dripper">Заказать <span aria-hidden="true">+</span>
@@ -186,7 +190,7 @@
               </article>
               <article class="product-card product-card--tools product-card--unavailable">
                 <a class="product-card__image-link" href="product-cup.html" aria-label="Подробнее: Кружка «Пауза»">
-                  <img class="product-card__image" src="images/cup.svg" width="600" height="600" loading="lazy" alt="Кружка «Пауза»">
+                  <img class="product-card__image" src="images/cup.svg" srcset="images/cup-small.svg 320w, images/cup.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Кружка «Пауза»">
                   <span class="product-card__badge">Скоро в наличии</span>
                   <span class="product-card__image-arrow" aria-hidden="true">↗</span>
                 </a>
@@ -200,7 +204,7 @@
                 <p class="product-card__description">Матовая керамика · 250 мл</p>
                 <div class="product-card__bottom">
                   <span class="product-card__price">1290 ₽</span>
-                  <button class="product-card__button" type="button" data-product="cup" disabled>Скоро <span aria-hidden="true">-</span>
+                  <button class="product-card__button" type="button" data-product="cup" disabled>Скоро <span aria-hidden="true">—</span>
                   </button>
                 </div>
                 <a class="product-card__details" href="product-cup.html">Подробнее о товаре →</a>
@@ -259,11 +263,11 @@
               <label for="quick-product">Товар или тема заявки *</label>
               <select id="quick-product" name="product" required aria-describedby="quick-product-error">
                 <option value="">Выберите товар или консультацию</option>
-                <option value="brazil">Бразилия Серрадо - 790 ₽</option>
-                <option value="ethiopia">Эфиопия Сидамо - 990 ₽</option>
-                <option value="colombia">Колумбия Уила - 890 ₽</option>
-                <option value="decaf">Вечерний ритуал - 1090 ₽</option>
-                <option value="dripper">Воронка 02 - 1590 ₽</option>
+                <option value="brazil">Бразилия Серрадо — 790 ₽</option>
+                <option value="ethiopia">Эфиопия Сидамо — 990 ₽</option>
+                <option value="colombia">Колумбия Уила — 890 ₽</option>
+                <option value="decaf">Вечерняя смена — 1090 ₽</option>
+                <option value="dripper">Воронка 02 — 1590 ₽</option>
                 <option value="consultation">Помочь с выбором</option>
               </select>
               <span class="order-form__error" id="quick-product-error"></span>
@@ -296,8 +300,8 @@
       <div class="container">
         <div class="site-footer__top">
           <div>
-            <a class="site-footer__logo" href="index.html">2much</a>
-            <p>Заряд настроения на весь день.</p>
+            <a class="site-footer__logo" href="index.html">СМЕНА</a>
+            <p>Кофе для своего ритма.</p>
           </div>
           <nav aria-label="Навигация в подвале">
             <a href="catalog.html">Выбрать кофе</a>
@@ -311,7 +315,7 @@
           </nav>
         </div>
         <div class="site-footer__bottom">
-          <span>© 2026 2much</span>
+          <span>© 2026 СМЕНА</span>
           <span>Учебный магазин. Покупки и отправка данных недоступны.</span>
           <a href="privacy.html">Обработка данных</a>
         </div>

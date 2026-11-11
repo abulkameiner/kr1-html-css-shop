@@ -1,0 +1,451 @@
+/* КР №3. Адаптивный слой (Mobile First).
+   Подключается после style.css и переопределяет раскладку:
+   базовые правила — для телефонов (от 320 px), затем min-width 768 / 1024 / 1440. */
+
+/* ---------- База (320–767 px) ---------- */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  overflow-wrap: break-word;
+}
+
+img, svg, video, picture {
+  max-width: 100%;
+  height: auto;
+}
+
+picture {
+  display: block;
+}
+
+.container {
+  width: calc(100% - 32px);
+}
+
+/* Минимальные размеры текста для читаемости */
+.breadcrumbs, .eyebrow, .order-form__intro, .order-form__field small,
+.order-form__error, .catalog-caption, .product-detail__disclaimer,
+.site-footer nav, .site-footer__top > div p, .spec-table caption {
+  font-size: 12px;
+}
+
+.site-footer__bottom, .product-card__meta, .product-card__description,
+.product-card__badge, .hero__visual figcaption, .site-header__descriptor {
+  font-size: 12px;
+}
+
+.site-header__descriptor {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+
+.site-nav__link {
+  font-size: 14px;
+  padding: 10px 4px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Шапка и навигация: логотип + кнопка в первой строке, меню — ниже */
+.site-header__inner {
+  min-height: 0;
+  padding-block: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+.site-header__order {
+  margin-left: auto;
+  font-size: 12px;
+}
+
+.site-nav {
+  order: 3;
+  width: 100%;
+}
+
+.site-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0 16px;
+}
+
+/* Hero */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-xl);
+  padding-block: var(--space-xl) var(--space-2xl);
+}
+
+.hero h1 {
+  font-size: clamp(38px, 11vw, 56px);
+  letter-spacing: -2px;
+  margin-block: 20px;
+}
+
+.hero__visual img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.1;
+  object-fit: cover;
+}
+
+/* Сетки карточек: 1 колонка */
+.product-grid, .product-grid--catalog {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-xl);
+}
+
+.product-grid--catalog .product-card__title { font-size: 20px; }
+.product-grid--catalog .product-card__meta { font-size: 12px; }
+.product-grid--catalog .product-card__description { font-size: 13px; }
+.product-grid--catalog .product-card__button { padding-left: 12px; }
+
+/* Каталог: фильтр сверху, список ниже */
+.catalog-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-xl);
+}
+
+.catalog-filters {
+  position: static;
+}
+
+.catalog-filters fieldset {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px var(--space-lg);
+}
+
+.catalog-filters legend {
+  grid-column: 1 / -1;
+}
+
+.catalog-filters label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 44px;
+}
+
+.catalog-filters__help {
+  display: none;
+}
+
+/* Карточка товара, характеристики, баннер, контакты, гид */
+.product-detail, .specifications, .brew-banner, .contact-layout,
+.guide-intro, .choice-grid, .recipe-grid, .order-layout,
+.approach__grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-xl);
+}
+
+.product-detail__visual img {
+  width: 100%;
+  max-height: 480px;
+  object-fit: contain;
+}
+
+.brew-banner > img {
+  height: auto;
+  aspect-ratio: 7 / 6;
+}
+
+.brew-banner__copy, .contact-note {
+  padding: var(--space-lg);
+}
+
+/* Таблица характеристик: горизонтальная прокрутка внутри обёртки */
+.table-wrap {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.spec-table th, .spec-table td {
+  padding: 12px;
+  vertical-align: top;
+}
+
+/* Формы: поля на всю ширину */
+.order-form__grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-md);
+}
+
+.order-form input:not([type="checkbox"]):not([type="radio"]),
+.order-form select,
+.order-form textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 44px;
+}
+
+.order-form__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--space-md);
+}
+
+.order-form__actions .button {
+  width: 100%;
+}
+
+.order-dialog {
+  width: calc(100% - 24px);
+  padding: 24px 16px;
+}
+
+.help-strip {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-md);
+}
+
+/* Подвал */
+.site-footer__top {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-xl);
+}
+
+.site-footer__top > div {
+  grid-column: 1 / -1;
+}
+
+.site-footer__bottom {
+  flex-direction: column;
+  padding-right: 40px;
+}
+
+/* ---------- Планшет (от 768 px) ---------- */
+@media (min-width: 768px) {
+  .container {
+    width: calc(100% - 64px);
+  }
+
+  .site-header__inner {
+    flex-wrap: nowrap;
+    padding-block: 16px;
+  }
+
+  .site-nav {
+    order: 0;
+    width: auto;
+  }
+
+  .site-nav__list {
+    gap: 0 20px;
+  }
+
+  .site-header__order {
+    margin-left: 0;
+  }
+
+  .hero h1 {
+    font-size: clamp(44px, 6.5vw, 60px);
+  }
+
+  .product-grid, .product-grid--catalog {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px 20px;
+  }
+
+  .approach__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .choice-grid, .recipe-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-xl);
+  }
+
+  .product-grid--catalog .product-card__meta { font-size: 12px; }
+
+  .order-form__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-lg);
+  }
+
+  .order-form__actions {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .order-form__actions .button {
+    width: auto;
+  }
+
+  .order-dialog {
+    width: min(700px, calc(100% - 32px));
+    padding: var(--space-xl);
+  }
+
+  .help-strip {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .brew-banner__copy, .contact-note {
+    padding: var(--space-xl);
+  }
+
+  .site-footer__top {
+    grid-template-columns: 1.5fr 1fr 1fr;
+  }
+
+  .site-footer__top > div {
+    grid-column: auto;
+  }
+
+  .site-footer__bottom {
+    flex-direction: row;
+    padding-right: 0;
+  }
+}
+
+/* ---------- Ноутбук (от 1024 px) ---------- */
+@media (min-width: 1024px) {
+  .container {
+    width: min(var(--container-width), calc(100% - 96px));
+  }
+
+  .site-nav__list {
+    gap: 0 28px;
+  }
+
+  .hero {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2xl);
+    align-items: center;
+    padding-block: var(--space-2xl) var(--space-3xl);
+  }
+
+  .hero__visual {
+    align-self: stretch;
+  }
+
+  .hero__visual img {
+    height: calc(100% - 26px);
+    aspect-ratio: auto;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-lg);
+  }
+
+  /* Боковая панель фильтра */
+  .catalog-layout {
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: var(--space-xl);
+    align-items: start;
+  }
+
+  .catalog-filters {
+    position: sticky;
+    top: 120px;
+  }
+
+  .catalog-filters fieldset {
+    display: block;
+  }
+
+  .catalog-filters__help {
+    display: block;
+  }
+
+  .product-grid--catalog {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 36px 20px;
+  }
+
+  .product-detail, .specifications {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: var(--space-2xl);
+  }
+
+  .product-detail {
+    align-items: center;
+  }
+
+  .brew-banner, .contact-layout, .guide-intro {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0;
+  }
+
+  .contact-layout, .guide-intro {
+    gap: var(--space-2xl);
+  }
+
+  .brew-banner > img {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  .recipe-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .choice-grid {
+    gap: var(--space-2xl) 64px;
+  }
+
+  .order-layout {
+    grid-template-columns: minmax(0, 1.5fr) minmax(220px, .7fr);
+    gap: var(--space-2xl);
+    align-items: start;
+  }
+
+  .spec-table th, .spec-table td {
+    padding: 13px 16px;
+  }
+}
+
+/* ---------- Широкий экран (от 1440 px) ---------- */
+@media (min-width: 1440px) {
+  .container {
+    width: min(var(--container-width), calc(100% - 160px));
+  }
+
+  .hero h1 {
+    font-size: 80px;
+  }
+
+  .catalog-layout {
+    grid-template-columns: 215px minmax(0, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .product-grid--catalog {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .order-layout {
+    gap: 80px;
+  }
+}
+
+/* Доступность: текст только для экранных дикторов (скрыт визуально) */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}

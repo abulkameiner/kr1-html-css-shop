@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Бразилия Серрадо - 2much</title>
-    <meta name="description" content="Бразилия Серрадо: Шоколад · фундук · карамель. Описание, характеристики и заявка в учебном магазине 2much.">
+    <title>Бразилия Серрадо — СМЕНА</title>
+    <meta name="description" content="Бразилия Серрадо: Шоколад · фундук · карамель. Описание, характеристики и заявка в учебном магазине СМЕНА.">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/data.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
-    <div class="announcement">Заряд настроения на весь день</div>
+    <div class="announcement">Хорошее время для кофе. Найдите свой вкус.</div>
     <header class="site-header" id="top">
       <div class="site-header__inner container">
-        <a class="site-header__logo" href="index.html" aria-label="2much - на главную">2much<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
+        <a class="site-header__logo" href="index.html" aria-label="Смена — на главную">СМЕНА<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
         </a>
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
@@ -52,12 +54,13 @@
       </nav>
       <section class="product-detail container">
         <div class="product-detail__visual">
-          <img src="images/brazil.svg" width="600" height="600" alt="Бразилия Серрадо - упаковка кофе">
+          <img src="images/brazil.svg" srcset="images/brazil-small.svg 320w, images/brazil.svg 600w" sizes="(min-width: 1024px) 45vw, 92vw" width="600" height="600" alt="Бразилия Серрадо — упаковка кофе">
         </div>
         <div class="product-detail__copy">
           <p class="eyebrow">Для эспрессо / 250 г</p>
           <h1>Бразилия Серрадо</h1>
           <p class="product-detail__notes">Шоколад · фундук · карамель</p>
+          <p id="product-summary" class="product-summary"></p>
           <p>Плотный, сладкий кофе с невысокой кислотностью. Для первого знакомства с зерном и привычной чашки с молоком.</p>
           <p class="product-detail__price">790 ₽ <small>/ 250 г</small>
           </p>
@@ -157,11 +160,11 @@
               <label for="quick-product">Товар или тема заявки *</label>
               <select id="quick-product" name="product" required aria-describedby="quick-product-error">
                 <option value="">Выберите товар или консультацию</option>
-                <option value="brazil">Бразилия Серрадо - 790 ₽</option>
-                <option value="ethiopia">Эфиопия Сидамо - 990 ₽</option>
-                <option value="colombia">Колумбия Уила - 890 ₽</option>
-                <option value="decaf">Вечерний ритуал - 1090 ₽</option>
-                <option value="dripper">Воронка 02 - 1590 ₽</option>
+                <option value="brazil">Бразилия Серрадо — 790 ₽</option>
+                <option value="ethiopia">Эфиопия Сидамо — 990 ₽</option>
+                <option value="colombia">Колумбия Уила — 890 ₽</option>
+                <option value="decaf">Вечерняя смена — 1090 ₽</option>
+                <option value="dripper">Воронка 02 — 1590 ₽</option>
                 <option value="consultation">Помочь с выбором</option>
               </select>
               <span class="order-form__error" id="quick-product-error"></span>
@@ -194,8 +197,8 @@
       <div class="container">
         <div class="site-footer__top">
           <div>
-            <a class="site-footer__logo" href="index.html">2much</a>
-            <p>Заряд настроения на весь день.</p>
+            <a class="site-footer__logo" href="index.html">СМЕНА</a>
+            <p>Кофе для своего ритма.</p>
           </div>
           <nav aria-label="Навигация в подвале">
             <a href="catalog.html">Выбрать кофе</a>
@@ -209,7 +212,7 @@
           </nav>
         </div>
         <div class="site-footer__bottom">
-          <span>© 2026 2much</span>
+          <span>© 2026 СМЕНА</span>
           <span>Учебный магазин. Покупки и отправка данных недоступны.</span>
           <a href="privacy.html">Обработка данных</a>
         </div>
