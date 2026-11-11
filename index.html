@@ -3,18 +3,20 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Заряд настроения на весь день - 2much</title>
-    <meta name="description" content="Кофе в зёрнах, аксессуары и понятные рецепты. Выберите свой вкус в учебном магазине 2much.">
+    <title>Кофе для своего ритма — СМЕНА</title>
+    <meta name="description" content="Кофе в зёрнах, аксессуары и понятные рецепты. Выберите свой вкус в учебном магазине СМЕНА.">
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/data.js" defer></script>
     <script src="js/main.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Перейти к содержимому</a>
-    <div class="announcement">Заряд настроения на весь день</div>
+    <div class="announcement">Хорошее время для кофе. Найдите свой вкус.</div>
     <header class="site-header" id="top">
       <div class="site-header__inner container">
-        <a class="site-header__logo" href="index.html" aria-label="2much - на главную">2much<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
+        <a class="site-header__logo" href="index.html" aria-label="Смена — на главную">СМЕНА<span class="site-header__descriptor">КОФЕ И ВЕЩИ ДЛЯ НЕГО</span>
         </a>
         <nav class="site-nav" aria-label="Основная навигация">
           <ul class="site-nav__list">
@@ -40,19 +42,19 @@
       <section class="hero container">
         <div class="hero__copy">
           <p class="eyebrow">НЕБОЛЬШАЯ ПЕРЕМЕНА. КАЖДЫЙ ДЕНЬ.</p>
-          <h1>Заряд настроения<br>на <em>весь день.</em>
+          <h1>Хороший день.<br>Хороший <em>кофе.</em>
           </h1>
-          <p class="hero__description">Зерно с понятным характером и вещи для любимого ритуала. От первого глотка - до последнего дела.</p>
+          <p class="hero__description">Зерно с понятным характером и вещи для любимого ритуала. От первого глотка — до последнего дела.</p>
           <a class="button" href="catalog.html">Найти свой кофе <span aria-hidden="true">↗</span>
           </a>
           <a class="hero__secondary" href="guide.html">А как его заварить?</a>
           <div class="hero__note">
             <span class="hero__asterisk" aria-hidden="true">✳</span>
-            <p>Эспрессо или фильтр?<br>Для каждого утра найдётся свой кофе.</p>
+            <p>Эспрессо или фильтр?<br>Для каждого утра найдётся своя смена.</p>
           </div>
         </div>
         <figure class="hero__visual">
-          <img src="images/hero.svg" width="780" height="800" alt="Два пакета кофе 2much и чашка: коллекции для эспрессо и фильтра">
+          <picture><source media="(max-width: 767px)" srcset="images/hero-small.svg"><img src="images/hero.svg" width="780" height="800" alt="Два пакета кофе Смена и чашка: коллекции для эспрессо и фильтра" fetchpriority="high"></picture>
           <figcaption>ЗЕРНО. ВОДА. НЕМНОГО ВРЕМЕНИ ДЛЯ СЕБЯ.</figcaption>
         </figure>
       </section>
@@ -62,7 +64,7 @@
           <article>
             <span class="approach__number">01</span>
             <h3>Вкус, который понятен</h3>
-            <p>Шоколад, ягоды или цитрусы - начните с того, что любите. Ноты в карточке помогут сориентироваться.</p>
+            <p>Шоколад, ягоды или цитрусы — начните с того, что любите. Ноты в карточке помогут сориентироваться.</p>
           </article>
           <article>
             <span class="approach__number">02</span>
@@ -88,7 +90,7 @@
         <div class="product-grid">
           <article class="product-card product-card--espresso">
             <a class="product-card__image-link" href="product.html" aria-label="Подробнее: Бразилия Серрадо">
-              <img class="product-card__image" src="images/brazil.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Бразилия Серрадо">
+              <img class="product-card__image" src="images/brazil.svg" srcset="images/brazil-small.svg 320w, images/brazil.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Упаковка кофе Бразилия Серрадо">
               <span class="product-card__badge">Начните с него</span>
               <span class="product-card__image-arrow" aria-hidden="true">↗</span>
             </a>
@@ -109,7 +111,7 @@
           </article>
           <article class="product-card product-card--filter">
             <a class="product-card__image-link" href="product-ethiopia.html" aria-label="Подробнее: Эфиопия Сидамо">
-              <img class="product-card__image" src="images/ethiopia.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Эфиопия Сидамо">
+              <img class="product-card__image" src="images/ethiopia.svg" srcset="images/ethiopia-small.svg 320w, images/ethiopia.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Упаковка кофе Эфиопия Сидамо">
               <span class="product-card__badge">Яркий вкус</span>
               <span class="product-card__image-arrow" aria-hidden="true">↗</span>
             </a>
@@ -130,7 +132,7 @@
           </article>
           <article class="product-card product-card--filter">
             <a class="product-card__image-link" href="product-colombia.html" aria-label="Подробнее: Колумбия Уила">
-              <img class="product-card__image" src="images/colombia.svg" width="600" height="600" loading="lazy" alt="Упаковка кофе Колумбия Уила">
+              <img class="product-card__image" src="images/colombia.svg" srcset="images/colombia-small.svg 320w, images/colombia.svg 600w" sizes="(min-width: 1024px) 30vw, (min-width: 768px) 45vw, 92vw" width="600" height="600" loading="lazy" alt="Упаковка кофе Колумбия Уила">
               <span class="product-card__image-arrow" aria-hidden="true">↗</span>
             </a>
             <div class="product-card__meta">
@@ -151,7 +153,7 @@
         </div>
       </section>
       <section class="brew-banner container">
-        <img src="images/brew.svg" width="700" height="600" loading="lazy" alt="Керамическая воронка на сервере для кофе">
+        <img src="images/brew.svg" srcset="images/brew-small.svg 320w, images/brew.svg 700w" sizes="(min-width: 1024px) 45vw, 92vw" width="700" height="600" loading="lazy" alt="Керамическая воронка на сервере для кофе">
         <div class="brew-banner__copy">
           <p class="eyebrow">МАЛЕНЬКИЙ ГИД</p>
           <h2>Пять минут.<br>И только ваша чашка.</h2>
@@ -197,11 +199,11 @@
               <label for="quick-product">Товар или тема заявки *</label>
               <select id="quick-product" name="product" required aria-describedby="quick-product-error">
                 <option value="">Выберите товар или консультацию</option>
-                <option value="brazil">Бразилия Серрадо - 790 ₽</option>
-                <option value="ethiopia">Эфиопия Сидамо - 990 ₽</option>
-                <option value="colombia">Колумбия Уила - 890 ₽</option>
-                <option value="decaf">Вечерний ритуал - 1090 ₽</option>
-                <option value="dripper">Воронка 02 - 1590 ₽</option>
+                <option value="brazil">Бразилия Серрадо — 790 ₽</option>
+                <option value="ethiopia">Эфиопия Сидамо — 990 ₽</option>
+                <option value="colombia">Колумбия Уила — 890 ₽</option>
+                <option value="decaf">Вечерняя смена — 1090 ₽</option>
+                <option value="dripper">Воронка 02 — 1590 ₽</option>
                 <option value="consultation">Помочь с выбором</option>
               </select>
               <span class="order-form__error" id="quick-product-error"></span>
@@ -234,8 +236,8 @@
       <div class="container">
         <div class="site-footer__top">
           <div>
-            <a class="site-footer__logo" href="index.html">2much</a>
-            <p>Заряд настроения на весь день.</p>
+            <a class="site-footer__logo" href="index.html">СМЕНА</a>
+            <p>Кофе для своего ритма.</p>
           </div>
           <nav aria-label="Навигация в подвале">
             <a href="catalog.html">Выбрать кофе</a>
@@ -249,7 +251,7 @@
           </nav>
         </div>
         <div class="site-footer__bottom">
-          <span>© 2026 2much</span>
+          <span>© 2026 СМЕНА</span>
           <span>Учебный магазин. Покупки и отправка данных недоступны.</span>
           <a href="privacy.html">Обработка данных</a>
         </div>
