@@ -302,7 +302,7 @@ picture {
   }
 
   .site-footer__top {
-    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
   }
 
   .site-footer__top > div {
